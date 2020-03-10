@@ -16,7 +16,7 @@ function clicked(ev) {
             clickedOff = false;
         }
         
-        if(ignoredElements.length) {
+        if(ignoredElements !== undefined && ignoredElements.length) {
             
             ignoredElements.forEach((i) => {
 
