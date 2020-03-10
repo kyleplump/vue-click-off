@@ -1,7 +1,7 @@
 {
   "name": "vue-click-off",
   "description": "Vue directive for detecting clicking off an element",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/vue-click-off.js",
   "author": "kyleplump",
   "license": "MIT",
