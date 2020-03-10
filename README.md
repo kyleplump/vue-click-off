@@ -48,7 +48,7 @@ export default {
 
 # Options
 
-You have the option to ignore specified pieces of the DOM from firing your click off handler.  For example, if you wanted to click a menu item in a dropdown, without firing the click off handler.  
+You have the option to ignore specified pieces of the DOM from firing your click off handler.  For example, if you wanted to click a menu item in a dropdown.  
 
 1) Import the directive into your component 
 2) Specify an array of class names as a data property
