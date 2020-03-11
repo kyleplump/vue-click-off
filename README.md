@@ -86,6 +86,9 @@ export default {
     <div v-click-off:[ignoredEl]="clickedOff">
       <h1>Alert when you click off of me!</h1>
     </div>
+    <div class="dontFire">
+      <h1>Ignored :(</h1>
+    </div>
   </div>
 </template>
 
