@@ -1,6 +1,6 @@
 let element = null;
 let ignoredElements = [];
-let callback = null;
+let directiveCallback = null;
 
 function clicked(ev) {
 
@@ -8,7 +8,7 @@ function clicked(ev) {
     let el = ev.srcElement;
     let clickedOff = true;
 
-    // traverse the DOM to find if the clicked element is a child of 
+    // traverse the DOM to find if the clicked element is a child of (or is)
     // the bound element, or if it is one of the exluded elements
     while(el.parentNode) {
     
@@ -32,16 +32,16 @@ function clicked(ev) {
     }
 
     if(clickedOff) {
-        callback();
+        directiveCallback();
     }
 }
 
-exports.clickOff = {
+export const clickOff = {
 
     bind: function(el, binding) {
         element = el;
         ignoredElements = binding.arg;
-        callback = binding.value;
+        directiveCallback = binding.value;
         document.addEventListener('click', clicked);
     },
 
@@ -50,3 +50,4 @@ exports.clickOff = {
     }
 }
 
+export default clickOff;
